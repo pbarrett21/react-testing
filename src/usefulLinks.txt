@@ -1,0 +1,8 @@
+Stateful vs Stateless
+https://medium.com/@cgcrutch18/stateful-vs-stateless-react-components-13f647f7fc4
+
+Passing Data between Components
+https://medium.com/@ruthmpardee/passing-data-between-react-components-103ad82ebd17
+
+Redux 3 Principles
+https://redux.js.org/introduction/three-principles
