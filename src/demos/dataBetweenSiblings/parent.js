@@ -14,6 +14,10 @@ class ParentToPassMessage extends React.Component {
         return (<span>{data}</span>);
     };
 
+    componentDidMount() {
+        
+    }
+
     render() {
         return(
             <div>
