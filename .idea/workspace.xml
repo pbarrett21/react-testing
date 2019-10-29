@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76086820-93a8-4aab-820d-23d9ccb12bc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demos/dataBetweenSiblings/child1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/dataBetweenSiblings/child2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/dataBetweenSiblings/parent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/dataChildtoParent/childComponentSender.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demos/dataChildtoParent/parentComponentReceiver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/demos/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usefulLinks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/usefulLinks.txt" afterDir="false" />
-    </list>
+    <list default="true" id="76086820-93a8-4aab-820d-23d9ccb12bc3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +43,7 @@
             <entry file="file://$PROJECT_DIR$/src/demos/dataBetweenSiblings/parent.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
-                  <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+                  <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -209,26 +200,25 @@
       <updated>1572014212582</updated>
       <workItem from="1572014216813" duration="2912000" />
       <workItem from="1572023995304" duration="11082000" />
-      <workItem from="1572270176588" duration="9638000" />
+      <workItem from="1572270176588" duration="10366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23632000" />
+    <option name="totallyTimeSpent" value="24360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="32" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.17277168" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17277168" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
@@ -373,7 +363,7 @@
     <entry file="file://$PROJECT_DIR$/src/demos/dataBetweenSiblings/parent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

@@ -7,6 +7,7 @@ import Fight from './objectProps';
 import StateCar from './stateAndSetState';
 import ParentComponent from './dataChildtoParent/parentComponentReceiver';
 import ParentToPassMessage from "./dataBetweenSiblings/parent";
+import Clock from './clock';
 
 const separationOfClassesExample = <SeparationOfClassesParent parentName='Bob' />;
 const inheritExample = <InheritClassAndPassProps />;
@@ -17,7 +18,8 @@ const examples = [
     {desc: 'Object as Props', example: objectPropExample},
     {desc: 'Using State and Reusing and Adding to Components', example: <StateCar/>},
     {desc: 'Passing data from Child to Parent using Callback', example: <ParentComponent/>},
-    {desc: 'Passing data from Sibling to Sibling through the Parent', example: <ParentToPassMessage/>}
+    {desc: 'Passing data from Sibling to Sibling through the Parent', example: <ParentToPassMessage/>},
+    {desc: 'Clock example updating render', example: <Clock/>}
 ];
 const options = examples.map(x => x.desc);
 
