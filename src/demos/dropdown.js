@@ -9,6 +9,7 @@ import ParentComponent from './dataChildtoParent/parentComponentReceiver';
 import ParentToPassMessage from "./dataBetweenSiblings/parent";
 import Clock from './clock';
 import WelcomeDialog from './compositionVsInheritance/compositionVsInheritance';
+import SplitPaneApp from './multipleHoles/sidebar';
 
 const separationOfClassesExample = <SeparationOfClassesParent parentName='Bob' />;
 const examples = [
@@ -19,7 +20,8 @@ const examples = [
     {desc: 'Passing data from Child to Parent using Callback', example: <ParentComponent/>},
     {desc: 'Passing data from Sibling to Sibling through the Parent', example: <ParentToPassMessage/>},
     {desc: 'Clock LifeCycle Example Updating Render', example: <Clock/>},
-    {desc: 'Composition vs Inheritance', example: <WelcomeDialog/>}
+    {desc: 'Composition vs Inheritance', example: <WelcomeDialog/>},
+    {desc: 'Multiple Props', example: <SplitPaneApp/>}
 ];
 const options = examples.map(x => x.desc);
 
