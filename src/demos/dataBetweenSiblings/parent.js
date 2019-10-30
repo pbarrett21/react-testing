@@ -11,17 +11,14 @@ class ParentToPassMessage extends React.Component {
     }
 
     messageCallback = data => {
+        this.setState({message: data});
         return (<span>{data}</span>);
     };
-
-    componentDidMount() {
-        
-    }
 
     render() {
         return(
             <div>
-                <ChildToSendMessage messageToRelay={this.messageCallback}/>
+                <ChildToSendMessage message={this.state.message} messageToRelay={this.messageCallback}/>
                 <strong>Parent: </strong>Message received and sent to Child 2 = {this.state.message}
                 <ChildToReceiveMessage messageToSendToChild={this.state.message}/>
             </div>
