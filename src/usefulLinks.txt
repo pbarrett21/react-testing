@@ -6,3 +6,6 @@ https://medium.com/@ruthmpardee/passing-data-between-react-components-103ad82ebd
 
 Redux 3 Principles
 https://redux.js.org/introduction/three-principles
+
+Mounting and Unmounting
+https://learn.co/lessons/react-component-mounting-and-unmounting
