@@ -37,13 +37,15 @@ class Clock extends React.Component {
 
     // What's happening:
     // 1. Constructor is called, setting up date as new Date
-    // 2. componentDidMount begins timer and calls tick after 1 second
-    // 3. 1 second passes, state is set to new Date causing rerender
-    // rinse, repeat step 3
-    // 4. Once finished with component (use dropdown to select different example/close tab/refresh tab) componentWillUnmount is called and stops timer
+    // 2. Initial render displays desired output to DOM
+    // 3. After render is complete, componentDidMount begins timer and calls tick after 1 second
+    // 4. 1 second passes, state is set to new Date causing rerender
+    // rinse, repeat step 4
+    // 5. Once finished with component (use dropdown to select different example/close tab/refresh tab) componentWillUnmount is called and stops timer
 
     // additional info:
     // https://learn.co/lessons/react-component-mounting-and-unmounting
+    // https://reactjs.org/docs/state-and-lifecycle.html [exact example]
 }
 
 export default Clock;
