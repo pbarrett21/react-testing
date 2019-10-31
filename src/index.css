@@ -12,10 +12,14 @@ code {
     monospace;
 }
 
-h2.Links {
-  
+.Links {
+  text-align: center;
 }
 
-a.Links {
+.Links h2 {
+  color: forestgreen;
+}
 
+.Links a {
+  color: inherit;
 }
