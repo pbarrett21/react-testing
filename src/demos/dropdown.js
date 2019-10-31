@@ -10,9 +10,11 @@ import ParentToPassMessage from "./dataBetweenSiblings/parent";
 import Clock from './clock';
 import WelcomeDialog from './compositionVsInheritance/compositionVsInheritance';
 import SplitPaneApp from './multipleHoles/sidebar';
+import DisplayLinks from '../usefulLinksAndInfo';
 
 const separationOfClassesExample = <SeparationOfClassesParent parentName='Bob' />;
 const examples = [
+    {desc: 'Useful Links', example: <DisplayLinks/>},
     {desc: 'Separation of Classes, Passing from Parent to Child using Props', example: separationOfClassesExample},
     {desc: 'Inherit Class and Pass Props', example: <InheritClassAndPassProps />},
     {desc: 'Object as Props', example: <Fight/>},
