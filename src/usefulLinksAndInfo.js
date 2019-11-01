@@ -11,7 +11,7 @@ function Links(props) {
 
 function CreateLinks(name, link) {
     return (
-        <div><a href={link} target="_blank"><h2>{name}</h2></a></div>
+        <div><a href={link} target="_blank" rel="noopener noreferrer"><h2>{name}</h2></a></div>
     );
 }
 

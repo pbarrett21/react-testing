@@ -11,6 +11,9 @@ import Clock from './clock';
 import WelcomeDialog from './compositionVsInheritance/compositionVsInheritance';
 import SplitPaneApp from './multipleHoles/sidebar';
 import DisplayLinks from '../usefulLinksAndInfo';
+import Toggle from './handlingEvents';
+import LoginControl from './conditionalRender';
+import ListsAndKeys from './listsAndKeys';
 
 const separationOfClassesExample = <SeparationOfClassesParent parentName='Bob' />;
 const examples = [
@@ -23,7 +26,10 @@ const examples = [
     {desc: 'Passing data from Sibling to Sibling through the Parent', example: <ParentToPassMessage/>},
     {desc: 'Clock LifeCycle Example Updating Render', example: <Clock/>},
     {desc: 'Composition vs Inheritance', example: <WelcomeDialog/>},
-    {desc: 'Multiple Props', example: <SplitPaneApp/>}
+    {desc: 'Multiple Props', example: <SplitPaneApp/>},
+    {desc: 'Conditional Rendering', example: <LoginControl/>},
+    {desc: 'Handling events and bind', example: <Toggle/>},
+    {desc: 'Lists and Keys', example: <ListsAndKeys/>}
 ];
 const options = examples.map(x => x.desc);
 
