@@ -41,10 +41,20 @@ class SearchBar extends React.Component {
     }
 }
 
+class ProductCategoryRow extends React.Component {
+    render () {
+        const category = this.props.category;
+        return (
+            <span>{category}</span>
+        );
+    }
+}
+
 class ProductTable extends React.Component {
     render() {
-        const product = props.product;
-        
+        const product = this.props.product;
+        const sportRows = <ProductRow product={PRODUCTS[0]}/>;
+        const electronicsRows = <ProductRow product={PRODUCTS[1]}/>;
 
         return (
             <div>
