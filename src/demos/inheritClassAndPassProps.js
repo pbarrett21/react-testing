@@ -1,6 +1,11 @@
 import React from 'react';
 import './../App.css';
 
+// NEWBIE MISTAKE
+// THIS IS BAD PRACTICE
+// At Facebook, we use React in thousands of components, and we haven’t found any use cases where we would recommend creating component inheritance hierarchies.
+// https://reactjs.org/docs/composition-vs-inheritance.html
+
 class Car extends React.Component {
     render() {
         return <span>I drive a {this.props.car}</span>
