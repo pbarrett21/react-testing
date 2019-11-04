@@ -16,6 +16,7 @@ import LoginControl from './conditionalRender';
 import ListsAndKeys from './listsAndKeys';
 import NameForm from './formsAndControlledComponents';
 import Calculator from './liftingState';
+import SignUpDialog from './specialization';
 
 const separationOfClassesExample = <SeparationOfClassesParent parentName='Bob' />;
 const examples = [
@@ -23,6 +24,7 @@ const examples = [
     { desc: 'Separation of Classes, Passing from Parent to Child using Props', example: separationOfClassesExample },
     { desc: 'Inherit Class and Pass Props', example: <InheritClassAndPassProps /> },
     { desc: 'Object as Props', example: <Fight /> },
+    { desc: 'Specialization', example: <SignUpDialog /> },
     { desc: 'Lifting State Temperature', example: <Calculator /> },
     { desc: 'Using State and Reusing and Adding to Components', example: <StateCar /> },
     { desc: 'Passing data from Child to Parent using Callback', example: <ParentComponent /> },
