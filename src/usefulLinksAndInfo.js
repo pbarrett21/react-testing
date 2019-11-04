@@ -23,6 +23,7 @@ function DisplayLinks() {
             {CreateLinks('Redux 3 Principles', 'https://redux.js.org/introduction/three-principles')}
             {CreateLinks('Mounting and Unmounting', 'https://learn.co/lessons/react-component-mounting-and-unmounting')}
             {CreateLinks('React Docs', 'https://reactjs.org/docs/state-and-lifecycle.html')}
+            {CreateLinks('Thinking in React', 'https://reactjs.org/docs/thinking-in-react.html')}
         </Links>
     );
 }
