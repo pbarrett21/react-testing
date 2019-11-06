@@ -15,37 +15,15 @@ class ProductRow extends React.Component {
     }
 }
 
-class FilterableProductTable extends React.Component {
-    render() {
-        return (
-            <div>
-                <SearchBar />
-                <ProductTable product={PRODUCTS} />
-            </div>
-        );
-    }
-}
-
-class SearchBar extends React.Component {
-    render() {
-        return (
-            <div>
-                <input type="text" placeholder="Search..." />
-                <p>
-                    <input type="checkbox" />
-                    {' '}
-                    Only show products in stock
-                </p>
-            </div>
-        );
-    }
-}
-
 class ProductCategoryRow extends React.Component {
     render () {
         const category = this.props.category;
         return (
-            <span>{category}</span>
+            <tr>
+                <th colSpan="2">
+                    {category}
+                </th>
+             </tr>
         );
     }
 }
@@ -53,11 +31,23 @@ class ProductCategoryRow extends React.Component {
 class ProductTable extends React.Component {
     render() {
         const product = this.props.product;
-        const sportRows = <ProductRow product={PRODUCTS[0]}/>;
-        const electronicsRows = <ProductRow product={PRODUCTS[1]}/>;
+        const sportRows = [];
+        const electronicsRows = [];
+        product.forEach(product => {
+            if (product.category === 'Sporting Goods') {
+                sportRows.push(
+                    <ProductRow product={product} key={product.name} />
+                );
+            } else {
+                electronicsRows.push(
+                    <ProductRow product={product} key={product.name} />
+                );
+            }
+        });        
 
         return (
-            <div>
+            <table>
+                <tbody>
                 <tr>
                     <td>Name</td>
                     <td>Price</td>
@@ -66,6 +56,41 @@ class ProductTable extends React.Component {
                 {sportRows}
                 <ProductCategoryRow category='Electronics' />
                 {electronicsRows}
+                </tbody>
+            </table>
+        );
+    }
+}
+
+class SearchBar extends React.Component {
+    render() {
+        return (
+            <form>
+                <input type="text" placeholder="Search..." />
+                <p>
+                    <input type="checkbox" />
+                    {' '}
+                    Only show products in stock
+                </p>
+            </form>
+        );
+    }
+}
+
+class FilterableProductTable extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {searchQuery: '', inStockOnly: false};
+    }
+
+    render() {
+        const searchQuery = this.state.searchQuery;
+        const inStockOnly = this.state.inStockOnly;
+
+        return (
+            <div>
+                <SearchBar searchQuery={searchQuery} inStockOnly={inStockOnly} />
+                <ProductTable product={PRODUCTS} searchQuery={searchQuery} inStockOnly={inStockOnly} />
             </div>
         );
     }
