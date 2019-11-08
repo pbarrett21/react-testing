@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import turt from './../turtpic.jpg';
 
 class Card extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class Card extends React.Component {
         return (
             <div className="container">
                 {post.user} - {post.header}
-                <img src={post.image} />
+                <img src={post.image} alt={post.header} />
                 {post.text}
             </div>
         );
@@ -16,17 +17,25 @@ class Card extends React.Component {
 
 class Feed extends React.Component {
     render() {
+        const posts = [];
+        POSTS.forEach(post => {
+            posts.push(
+                <Card key={post.name} post={post} />
+            );
+        });
         return (
-            <Card post={POSTS[0]} />
+            <div>
+                {posts}
+            </div>
         );
     }
 }
 
 const POSTS = [
-    {user: 'Fastturtle4', header: 'First post', text: 'Testing the first post', image: './turtpic.jpeg'},
-    {user: 'Paul.barrett21', header: 'Second post', text: 'second', image: null},
-    {user: 'Yeetbro', header: 'YEET', text: 'y33t', image: null},
-    {user: 'Stonks', header: 'ACB to the MOON', text: 'Invest in ACB and get rich!', image: null}
+    {user: 'Fastturtle4', header: 'First post', text: 'Testing the first post', image: turt},
+    {user: 'Paul.barrett21', header: 'Second post', text: 'second', image: turt},
+    {user: 'Yeetbro', header: 'YEET', text: 'y33t', image: turt},
+    {user: 'Stonks', header: 'ACB to the MOON', text: 'Invest in ACB and get rich!', image: turt}
 ];
 
 export default Feed;
