@@ -24,6 +24,7 @@ function DisplayLinks() {
             {CreateLinks('Mounting and Unmounting', 'https://learn.co/lessons/react-component-mounting-and-unmounting')}
             {CreateLinks('React Docs', 'https://reactjs.org/docs/state-and-lifecycle.html')}
             {CreateLinks('Thinking in React', 'https://reactjs.org/docs/thinking-in-react.html')}
+            {CreateLinks('React Practice Projects', 'https://daveceddia.com/react-practice-projects/')}
         </Links>
     );
 }

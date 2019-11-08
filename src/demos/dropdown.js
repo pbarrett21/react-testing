@@ -18,11 +18,13 @@ import NameForm from './formsAndControlledComponents';
 import Calculator from './liftingState';
 import SignUpDialog from './specialization';
 import FilterableProductTable from './thinkingInReact';
+import Feed from './socialCard/card';
 
 const separationOfClassesExample = <SeparationOfClassesParent parentName='Bob' />;
 const examples = [
     { desc: 'Useful Links', example: <DisplayLinks /> },
     { desc: 'Thinking In React Example', example: <FilterableProductTable /> },
+    { desc: 'Social Feed Project', example: <Feed /> },
     { desc: 'Separation of Classes, Passing from Parent to Child using Props', example: separationOfClassesExample },
     { desc: 'Inherit Class and Pass Props', example: <InheritClassAndPassProps /> },
     { desc: 'Object as Props', example: <Fight /> },
