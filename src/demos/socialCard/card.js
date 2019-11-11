@@ -1,15 +1,19 @@
 import React from 'react';
 import './styles.css';
-import turt from './../turtpic.jpg';
+import turt from './../../images/turtpic.jpg';
+import banana from './../../images/banana.jpg';
+import yeet from './../../images/yeet.jpg';
+import acb from './../../images/acb.jpg';
 
 class Card extends React.Component {
     render() {
         const post = this.props.post;
         return (
             <div className="container">
-                {post.user} - {post.header}
+                <b>{post.user} - {post.header}</b>
                 <img src={post.image} alt={post.header} />
-                {post.text}
+                <p>{post.text}</p>
+                <hr></hr>
             </div>
         );
     }
@@ -24,7 +28,7 @@ class Feed extends React.Component {
             );
         });
         return (
-            <div>
+            <div className="background">
                 {posts}
             </div>
         );
@@ -32,10 +36,10 @@ class Feed extends React.Component {
 }
 
 const POSTS = [
-    {user: 'Fastturtle4', header: 'First post', text: 'Testing the first post', image: turt},
-    {user: 'Paul.barrett21', header: 'Second post', text: 'second', image: turt},
-    {user: 'Yeetbro', header: 'YEET', text: 'y33t', image: turt},
-    {user: 'Stonks', header: 'ACB to the MOON', text: 'Invest in ACB and get rich!', image: turt}
+    {user: 'Fastturtle4', header: 'First post', text: 'Testing the first post caption', image: turt},
+    {user: 'Paul.barrett21', header: 'Second post', text: 'second caption', image: banana},
+    {user: 'Yeetbro', header: 'YEET', text: 'y33t', image: yeet},
+    {user: 'Stonks', header: 'ACB to the MOON', text: 'Invest in ACB and get rich!', image: acb}
 ];
 
 export default Feed;

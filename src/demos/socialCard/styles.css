@@ -1,10 +1,21 @@
+.background {
+    background-image: linear-gradient(white, rgb(255, 115, 0));
+}
+
 .container {
-    width: 200px;
-    height: 120px;
+    width: 500px;
+    height: inherit;
+    margin: auto;
 }
 
 /* resize images */
 .container img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border: 2px solid rgb(41, 23, 23);
+}
+
+.container b, p {
+    padding: 5px;
 }
