@@ -11,6 +11,8 @@ import banana from './../../images/banana.jpg';
 import yeet from './../../images/yeet.jpg';
 import acb from './../../images/acb.jpg';
 
+// https://reacttraining.com/react-router/web/example/basic
+
 class Card extends React.Component {
     render() {
         const post = this.props.post;
