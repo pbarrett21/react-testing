@@ -18,26 +18,14 @@ class Card extends React.Component {
         const post = this.props.post;
         const link = "/" + post.user;
         return (
-            <Router>
                 <div className="container">
-                    <b><Link to={link}>{post.user}</Link> - {post.header}</b>
+                    <b>{post.user} - {post.header}</b>
                     <img src={post.image} alt={post.header} />
                     <p>{post.text}</p>
                     <hr></hr>
                 </div>
-
-                <Switch>
-                    <Route path={link}>
-                        <Test />
-                    </Route>
-                </Switch>
-            </Router>
         );
     }
-}
-
-function Test() {
-    return <h2>Test</h2>;
 }
 
 class Feed extends React.Component {
