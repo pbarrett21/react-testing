@@ -21,6 +21,7 @@ import FilterableProductTable from './thinkingInReact';
 import Feed from './socialCard/card';
 import ParentHelloOrGoodbye from './newPageExplore/redirectToNewPageExploration';
 import SocialCard from './newPageExplore/attempt2';
+import Explore from './newPageExplore/routeplore';
 
 const separationOfClassesExample = <SeparationOfClassesParent parentName='Bob' />;
 const examples = [
@@ -29,6 +30,7 @@ const examples = [
     { desc: 'Social Feed Project', example: <Feed /> },
     { desc: 'HelloOrGoodbye', example: <ParentHelloOrGoodbye /> },
     { desc: 'Social card link change view', example: <SocialCard /> },
+    { desc: 'Explore', example: <Explore /> },
     { desc: 'Separation of Classes, Passing from Parent to Child using Props', example: separationOfClassesExample },
     { desc: 'Inherit Class and Pass Props', example: <InheritClassAndPassProps /> },
     { desc: 'Object as Props', example: <Fight /> },
