@@ -22,10 +22,12 @@ import Feed from './socialCard/card';
 import ParentHelloOrGoodbye from './newPageExplore/redirectToNewPageExploration';
 import SocialCard from './newPageExplore/attempt2';
 import Explore from './newPageExplore/routeplore';
+import Outstagram from './outstagram/outstagram';
 
 const separationOfClassesExample = <SeparationOfClassesParent parentName='Bob' />;
 const examples = [
     { desc: 'Useful Links', example: <DisplayLinks /> },
+    { desc: 'Outstagram', example: <Outstagram /> },
     { desc: 'Thinking In React Example', example: <FilterableProductTable /> },
     { desc: 'Social Feed Project', example: <Feed /> },
     { desc: 'HelloOrGoodbye', example: <ParentHelloOrGoodbye /> },

@@ -1,10 +1,4 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 import './styles.css';
 import turt from './../../images/turtpic.jpg';
 import banana from './../../images/banana.jpg';
@@ -16,7 +10,6 @@ import acb from './../../images/acb.jpg';
 class Card extends React.Component {
     render() {
         const post = this.props.post;
-        const link = "/" + post.user;
         return (
                 <div className="container">
                     <b>{post.user} - {post.header}</b>

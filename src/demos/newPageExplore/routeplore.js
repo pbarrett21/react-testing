@@ -9,17 +9,9 @@ import {
 const Explore = () => {
     return (
         <div>
-            <Content />
-        </div>
-    );
-}
-
-const Header = () => {
-    return (
-        <div>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/feed'>Feed</Link></li>
-            <li><Link to='/profile'>Your Profile</Link></li>
+            <Router>
+                <Content />
+            </Router>
         </div>
     );
 }
