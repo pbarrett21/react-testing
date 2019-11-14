@@ -1,5 +1,5 @@
 import React from 'react';
-import './compositionVsInheritance/styles.css';
+import './../compositionVsInheritance/styles.css';
 
 // Sometimes we think about components as being “special cases” of other components. 
 // For example, we might say that a WelcomeDialog is a special case of Dialog.

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import DropTest from './demos/dropdown';
+import DropTest from './demos/practice/dropdown';
 
 ReactDOM.render(<DropTest/>, document.getElementById('root'));
 
