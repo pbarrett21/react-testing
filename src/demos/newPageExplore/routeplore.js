@@ -6,41 +6,81 @@ import {
     Link
 } from "react-router-dom";
 
-class Explore extends React.Component {
-
-    render() {
-        return (
-            <Router>
-                <div>
-                    <Link to="/about">About</Link>
-                    <Switch>
-                        <Route path="/about">
-                            <About />
-                        </Route>
-                    </Switch>
-                </div>
-            </Router>
-        );
-    }
-}
-
-function Home() {
-    return <h2>Home</h2>;
-}
-
-function About() {
+const Explore = () => {
     return (
-        <Router>
-            <Link to="/">Return</Link>
-            <Route path="/">
-                <Explore />
-            </Route>
-        </Router>
+        <div>
+            <Content />
+        </div>
     );
 }
 
-function Users() {
-    return <h2>Users</h2>;
+const Header = () => {
+    return (
+        <div>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/feed'>Feed</Link></li>
+            <li><Link to='/profile'>Your Profile</Link></li>
+        </div>
+    );
 }
+
+const Content = () => {
+    return (
+        <Switch>
+            <Route exact path="/">
+                <Users />
+            </Route>
+            <Route path="/feed">
+                <Users />
+            </Route>
+            <Route path="/profile">
+                <h1>test2</h1>
+            </Route>
+            <Route path="/user/:number" component={Profile} />
+        </Switch>
+    );
+}
+
+const Users = () => {
+    const userList = [];
+    POSTS.forEach((user) => {
+        userList.push(
+            <User info={user} key={user.id} />
+        );
+    });
+    return (
+        <div>
+            {userList}
+        </div>
+
+    );
+}
+
+const User = (props) => {
+    return (
+        <div>
+            <p><Link to={`/user/${props.info.id}`}>{props.info.user}</Link></p>
+            <hr></hr>
+        </div>
+    );
+}
+
+const Profile = (props) => {
+    const id = parseInt(props.match.params.number);
+    const user = POSTS.find(post => post.id === id);
+    return (
+        <div>
+            <p>{user.user}'s Profile</p>
+            <Link to="/">Go Back</Link>
+        </div>
+    );
+}
+
+const POSTS = [
+    { user: 'Fastturtle4', id: 0 },
+    { user: 'Paul.barrett21', id: 1 },
+    { user: 'Yeetbro', id: 2 },
+    { user: 'Stonks', id: 3 }
+];
 
 export default Explore;
