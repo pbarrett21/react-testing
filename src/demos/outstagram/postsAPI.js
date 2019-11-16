@@ -8,14 +8,14 @@ import image3 from './../../images/image3.jpeg';
 import image4 from './../../images/image4.jpeg';
 
 const POSTS = [
-    { user: 'user1', header: 'user1 post header', text: 'user1 caption', image: image1 },
-    { user: 'user2', header: 'user2 post header', text: 'user2 caption', image: image2 },
-    { user: 'user3', header: 'user3 post header', text: 'user3 caption', image: image3 },
-    { user: 'user4', header: 'user4 post header', text: 'user4 caption', image: image4 },
-    { user: 'user5', header: 'user5 post header', text: 'user5 caption', image: turt },
-    { user: 'user6', header: 'user6 post header', text: 'user6 caption', image: banana },
-    { user: 'user7', header: 'user7 post header', text: 'user7 caption', image: yeet },
-    { user: 'user8', header: 'user8 post header', text: 'user8 caption', image: acb }
+    { user: 'User1', header: 'User1 post header', text: 'User1 caption', image: image1 },
+    { user: 'User2', header: 'User2 post header', text: 'User2 caption', image: image2 },
+    { user: 'User3', header: 'User3 post header', text: 'User3 caption', image: image3 },
+    { user: 'User4', header: 'User4 post header', text: 'User4 caption', image: image4 },
+    { user: 'User5', header: 'User5 post header', text: 'User5 caption', image: turt },
+    { user: 'User6', header: 'User6 post header', text: 'User6 caption', image: banana },
+    { user: 'User7', header: 'User7 post header', text: 'User7 caption', image: yeet },
+    { user: 'User8', header: 'User8 post header', text: 'User8 caption', image: acb }
 ];
 
 export default POSTS;

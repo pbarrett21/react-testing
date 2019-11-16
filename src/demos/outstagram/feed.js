@@ -1,12 +1,12 @@
 import React from 'react';
 import POSTS from './postsAPI';
-import User from './user';
+import Post from './post';
 
 const Feed = () => {
     const userList = [];
     POSTS.forEach((user) => {
         userList.push(
-            <User info={user} key={user.text} />
+            <Post info={user} key={user.text} />
         );
     });
     return (
