@@ -7,16 +7,16 @@ const Post = (props) => {
     return (
         <div>
             <div className="post-container">
-                <p>
-                    <div className="profile-picture-container">
+                <div className="profile-header-container">
+                    <p className="profile-picture-container">
                         <img src={postInfo.image} alt={postInfo.header} className="profile-picture" />
-                    </div>
-                    <div className="profile-header">
+                    </p>
+                    <p className="profile-header">
                     <Link to={`/user/${postInfo.user}`} style={{ textDecoration: 'none' }}>
                         <span className="profile-name">{postInfo.user}</span>
                     </Link>
-                    </div>
-                </p>
+                    </p>
+                </div>
                 <img src={postInfo.image} alt={postInfo.header} />
                 <Link to={`/user/${postInfo.user}`} style={{ textDecoration: 'none' }}>
                         <span className="profile-name">{postInfo.user}</span>

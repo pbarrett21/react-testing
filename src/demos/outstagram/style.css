@@ -3,6 +3,7 @@
     height: inherit;
     margin: auto;
     border: 1px solid rgb(204, 186, 186);
+    border-radius: 1.5%;
     padding: 5px;
 }
 
@@ -10,19 +11,17 @@
     width: inherit;
 }
 
-.post-container p {
-    padding: 0px;
-    margin: 5px;
-}
-
 .profile-name {
     color: black;
     font-weight: 500;
+    margin: 0px;
 }
 
 .profile-picture {
     width: auto;
     height: 100%;
+    margin: 0px;
+    border-radius: 50%;
 }
 
 .profile-picture-container {
@@ -32,10 +31,12 @@
     height: 20px;
     overflow: hidden;
     border-radius: 50%;
+    margin: 0px;
 }
 
 .profile-header {
     display: inline-block;
     position: relative;
     overflow: hidden;
+    margin: 0px;
 }
