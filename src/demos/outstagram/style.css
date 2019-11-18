@@ -1,5 +1,38 @@
+.app {
+    width: 412px;
+    margin: auto;
+}
+
+.sticky-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border: 1px solid rgb(204, 186, 186);
+    background-color: #FFFFFF;
+    z-index: 1;
+    height: 45px;
+}
+
+.home-icon {
+    width: 30px;
+}
+
+.navbar-content {
+    display: inline-block;
+    color: black;
+}    
+
+.messages-icon {
+    float: right;
+    width: 30px;
+}
+
+.messages-icon img {
+    width: 30px;
+}
+
 .post-container {
-    width: 300px;
+    width: 400px;
     height: inherit;
     margin: auto;
     border: 1px solid rgb(204, 186, 186);

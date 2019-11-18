@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import POSTS from './postsAPI';
 
 const Profile = (props) => {
@@ -8,7 +7,6 @@ const Profile = (props) => {
     return (
         <div>
             <p>{user.user}'s Profile</p>
-            <Link to="/">Go Back</Link>
         </div>
     );
 }
