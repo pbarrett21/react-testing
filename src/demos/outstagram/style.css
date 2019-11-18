@@ -7,8 +7,10 @@
     padding: 5px;
 }
 
-.post-container img {
+.content-picture {
+    object-fit: cover;
     width: inherit;
+    height: 300px;
 }
 
 .profile-name {
@@ -18,7 +20,7 @@
 }
 
 .profile-picture {
-    width: auto;
+    width: inherit;
     height: 100%;
     margin: 0px;
     border-radius: 50%;

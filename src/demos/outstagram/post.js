@@ -17,7 +17,7 @@ const Post = (props) => {
                     </Link>
                     </p>
                 </div>
-                <img src={postInfo.image} alt={postInfo.header} />
+                <img className="content-picture" src={postInfo.image} alt={postInfo.header} />
                 <Link to={`/user/${postInfo.user}`} style={{ textDecoration: 'none' }}>
                         <span className="profile-name">{postInfo.user}</span>
                 </Link>
