@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Feed from './feed';
 import Profile from './profile';
-import Messages from './messages';
+import MessageFeed from './messagefeed';
 
 const Main = () => {
     return (
@@ -15,7 +15,7 @@ const Main = () => {
             </Route>
             <Route path="/user/:username" component={Profile} />
             <Route exact path="/messages">
-                <Messages />
+                <MessageFeed />
             </Route>
         </Switch>
     );

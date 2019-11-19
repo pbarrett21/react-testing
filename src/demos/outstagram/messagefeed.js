@@ -1,6 +1,7 @@
 import React from 'react';
+import MESSAGES from './messagesAPI';
 
-const Messages = () => {
+const MessageFeed = () => {
     return (
         <div>
             Success
@@ -8,4 +9,4 @@ const Messages = () => {
     );
 }
 
-export default Messages;
+export default MessageFeed;
