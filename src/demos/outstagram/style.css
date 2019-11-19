@@ -20,7 +20,21 @@
 .navbar-content {
     display: inline-block;
     color: black;
-}    
+}
+
+.socialbar {
+    display: inline;
+}
+
+.socialbar img {
+    width: 15px;
+    padding-right: 8px;
+}
+
+.socialbar-right {
+    float: right;
+    padding-right: 0px;
+}
 
 .messages-icon {
     float: right;
@@ -44,6 +58,11 @@
     object-fit: cover;
     width: inherit;
     height: 300px;
+}
+
+.post-caption {
+    font-size: 10pt;
+    margin: 0;
 }
 
 .profile-name {

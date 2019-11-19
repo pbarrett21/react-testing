@@ -2,8 +2,8 @@ import React from 'react';
 
 const Message = (props) => {
     return (
-        <div>
-            Success
+        <div className="post-container">
+            {props.info.user}
         </div>
     );
 }

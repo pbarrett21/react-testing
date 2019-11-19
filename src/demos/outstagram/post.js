@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './style.css';
+import Socialbar from './socialbar';
 
 const Post = (props) => {
     const postInfo = props.info;
@@ -18,10 +19,11 @@ const Post = (props) => {
                     </p>
                 </div>
                 <img className="content-picture" src={postInfo.image} alt={postInfo.header} />
+                <Socialbar />
                 <Link to={`/user/${postInfo.user}`} style={{ textDecoration: 'none' }}>
                         <span className="profile-name">{postInfo.user}</span>
                 </Link>
-                <p>{postInfo.text}</p>
+                <p className="post-caption">{postInfo.text}</p>
             </div>
         </div>
     );
